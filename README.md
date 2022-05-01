@@ -1,4 +1,4 @@
-#Setup Instructions:
+## Setup Instructions:
 
 There are 2 services here. A movie-recommendation-service and a movie-dashboard-service.
 
