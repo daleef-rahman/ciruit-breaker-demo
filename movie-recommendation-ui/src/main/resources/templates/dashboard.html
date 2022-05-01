@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pluralsight - Toll Rate Dashboard</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet" />
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-12" style="text-align:center">
+			<h1>Movies you might like</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8" style="background-color:#5f4b8b;color:#E69A8DFF;height:600px;font-family: 'Bungee Inline', cursive; border: 5px solid #E69A8DFF">
+<!--			<div class="pull-left" style="height:150px; font-size:60px; margin-top:70px" th:text="${rate.currentRate}"></div>-->
+			<div class="pull-left" style="height:150px; font-size:30px; margin-top:70px">
+				<ul th:each="movie : ${movies}">
+					<li th:text="${movie.name}"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+    
+</body>
+</html>
